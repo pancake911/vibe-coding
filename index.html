@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的小程序集合</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .app-card .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .app-card h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .app-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .app-card .tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px 20px;
+            opacity: 0.8;
+        }
+
+        .coming-soon {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .coming-soon:hover {
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 我的小程序集合</h1>
+            <p>收集各种有趣实用的网页小工具</p>
+        </header>
+
+        <div class="apps-grid">
+            <a href="apps/人生K线图.html" class="app-card">
+                <span class="icon">📈</span>
+                <h2>人生K线图</h2>
+                <p>根据出生信息，用周易命理的方式生成你的人生运势K线图。输入姓名、性别、出生日期等信息，查看0-80岁的人生起伏。</p>
+                <span class="tag">已上线</span>
+            </a>
+
+            <div class="app-card coming-soon">
+                <span class="icon">🎯</span>
+                <h2>更多小程序</h2>
+                <p>更多有趣的小程序正在开发中，敬请期待...</p>
+                <span class="tag">即将上线</span>
+            </div>
+
+            <div class="app-card coming-soon">
+                <span class="icon">🎨</span>
+                <h2>更多小程序</h2>
+                <p>更多有趣的小程序正在开发中，敬请期待...</p>
+                <span class="tag">即将上线</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 我的小程序集合 | 持续更新中</p>
+        </footer>
+    </div>
+</body>
+</html>
